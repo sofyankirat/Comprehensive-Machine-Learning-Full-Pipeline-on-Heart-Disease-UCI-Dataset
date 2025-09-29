@@ -1,4 +1,4 @@
-# 🫀 Comprehensive Machine Learning Pipeline on Heart Disease UCI Dataset
+# Comprehensive Machine Learning Pipeline on Heart Disease UCI Dataset
 
 ## 📌 Project Overview
 This project builds a **full end-to-end ML pipeline** to predict heart disease using the **UCI Heart Disease Dataset**.  
