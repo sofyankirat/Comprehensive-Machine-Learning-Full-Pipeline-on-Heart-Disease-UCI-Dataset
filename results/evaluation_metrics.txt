@@ -1,0 +1,91 @@
+--- Original Logistic Regression ---
+Accuracy : 0.885
+Precision: 0.862
+Recall   : 0.893
+F1-score : 0.877
+AUC Score: 0.961
+
+--- Logistic Regression (GridSearchCV Optimized) ---
+Accuracy : 0.885
+Precision: 0.862
+Recall   : 0.893
+F1-score : 0.877
+AUC Score: 0.956
+
+--- Logistic Regression (RandomizedSearchCV Optimized) ---
+Accuracy : 0.885
+Precision: 0.862
+Recall   : 0.893
+F1-score : 0.877
+AUC Score: 0.958
+
+---------------------------------------
+
+--- Original Decision Tree (Default) ---
+Accuracy : 0.754
+Precision: 0.697
+Recall   : 0.821
+F1-score : 0.754
+AUC Score: 0.759
+
+--- Decision Tree (GridSearchCV Optimized) ---
+Accuracy : 0.754
+Precision: 0.842
+Recall   : 0.571
+F1-score : 0.681
+AUC Score: 0.888
+
+--- Decision Tree (RandomizedSearchCV Optimized) ---
+Accuracy : 0.721
+Precision: 0.762
+Recall   : 0.571
+F1-score : 0.653
+AUC Score: 0.846
+
+---------------------------------------
+
+--- Original Random Forest (Default) ---
+Accuracy : 0.869
+Precision: 0.833
+Recall   : 0.893
+F1-score : 0.862
+AUC Score: 0.930
+
+--- Random Forest (GridSearchCV Optimized) ---
+Accuracy : 0.869
+Precision: 0.833
+Recall   : 0.893
+F1-score : 0.862
+AUC Score: 0.930
+
+--- Random Forest (RandomizedSearchCV Optimized) ---
+Accuracy : 0.902
+Precision: 0.893
+Recall   : 0.893
+F1-score : 0.893
+AUC Score: 0.948
+
+---------------------------------------
+
+--- Original SVM (Default) ---
+Accuracy : 0.885
+Precision: 0.889
+Recall   : 0.857
+F1-score : 0.873
+AUC Score: 0.961
+
+--- SVM (GridSearchCV Optimized) ---
+Accuracy : 0.836
+Precision: 0.800
+Recall   : 0.857
+F1-score : 0.828
+AUC Score: 0.938
+
+--- SVM (RandomizedSearch Optimized) ---
+Accuracy : 0.836
+Precision: 0.800
+Recall   : 0.857
+F1-score : 0.828
+AUC Score: 0.938
+
+---------------------------------------
