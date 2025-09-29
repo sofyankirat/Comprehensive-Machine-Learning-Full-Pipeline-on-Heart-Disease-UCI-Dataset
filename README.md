@@ -32,26 +32,44 @@ A bonus **Streamlit UI** is included for real-time predictions, with deployment 
 ## 📂 File Structure
 Heart_Disease_Project/
 │── data/
-│ ├── heart_disease.csv
-│── notebooks/
-│ ├── 01_data_preprocessing.ipynb
-│ ├── 02_pca_analysis.ipynb
-│ ├── 03_feature_selection.ipynb
-│ ├── 04_supervised_learning.ipynb
-│ ├── 05_unsupervised_learning.ipynb
-│ ├── 06_hyperparameter_tuning.ipynb
-│── models/
-│ ├── final_model.pkl
-│── ui/
-│ ├── app.py # Streamlit UI
-│── deployment/
-│ ├── ngrok_setup.txt
-│── results/
-│ ├── evaluation_metrics.txt
-│── requirements.txt
-│── README.md
-│── .gitignore
 
+│ ├── heart_disease.csv
+
+│── notebooks/
+
+│ ├── 01_data_preprocessing.ipynb
+
+│ ├── 02_pca_analysis.ipynb
+
+│ ├── 03_feature_selection.ipynb
+
+│ ├── 04_supervised_learning.ipynb
+
+│ ├── 05_unsupervised_learning.ipynb
+
+│ ├── 06_hyperparameter_tuning.ipynb
+
+│── models/
+
+│ ├── final_model.pkl
+
+│── ui/
+
+│ ├── app.py # Streamlit UI
+
+│── deployment/
+
+│ ├── ngrok_setup.txt
+
+│── results/
+
+│ ├── evaluation_metrics.txt
+
+│── requirements.txt
+
+│── README.md
+
+│── .gitignore
 
 ---
 
@@ -64,21 +82,22 @@ It’s recommended to use a virtual environment to keep dependencies isolated.
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-
+```
 **On Windows (PowerShell):**
 ```bash
 python -m venv venv
 venv\Scripts\activate
-
+```
 ### 3️⃣ Install Dependencies
 Install all required libraries from requirements.txt:
 
 ```bash
 pip install -r requirements.txt
-
+```
 ### 4️⃣ Verify Installation
 Run Python and check that key packages are available:
 
 ```bash
 python
 >>> import pandas, sklearn, streamlit, joblib
+```
