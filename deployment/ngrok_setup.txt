@@ -1,0 +1,71 @@
+========================================================================
+         HOW TO MAKE HEART DISEASE PREDICTOR PUBLICLY ACCESSIBLE
+========================================================================
+
+📋 QUICK GUIDE: Follow these 2 simple steps to make your app available online
+
+⚠️  IMPORTANT NOTES:
+- The app runs on YOUR computer
+- The public link is TEMPORARY
+- URL changes each time you restart
+- App is only online when deployment is running
+
+========================================================================
+STEP 1: ONE-TIME SETUP (Run this once)
+========================================================================
+
+1. Download ngrok.exe from: https://ngrok.com/download
+2. Save ngrok.exe to your project folder
+3. Double-click 'setup_ngrok.bat'
+4. Wait for "SETUP COMPLETED" message
+5. Setup is done!
+
+========================================================================
+STEP 2: DEPLOYMENT (Run this when you want app online)
+========================================================================
+
+1. Double-click 'free_deploy.bat'
+2. Wait 15-20 seconds for app to start
+3. Copy the URL that appears (looks like: https://abc123.ngrok-free.dev)
+4. Share this URL with users
+5. KEEP THE WINDOW OPEN to keep app accessible
+
+🚫 DO NOT:
+- Close the deployment window
+- Shut down your computer
+- Put computer to sleep
+
+✅ TO KEEP APP ONLINE:
+- Keep the 'free_deploy.bat' window open
+- Plug laptop into power
+- Use stable internet connection
+- Disable sleep mode in Windows Power settings
+
+========================================================================
+TROUBLESHOOTING
+========================================================================
+
+❌ Problem: "ngrok not found"
+✅ Solution: Make sure ngrok.exe is in the same folder as setup_ngrok.bat
+
+❌ Problem: "Streamlit not found"
+✅ Solution: Run setup_ngrok.bat first to install dependencies
+
+❌ Problem: Users see "Endpoint offline"
+✅ Solution: The deployment window was closed. Run free_deploy.bat again.
+
+❌ Problem: URL changed
+✅ Solution: Normal for free tier. Share the new URL.
+
+========================================================================
+QUICK START:
+========================================================================
+
+1. Run setup_ngrok.bat (one-time)
+2. Run free_deploy.bat (when needed)
+3. Copy the URL
+4. Share with users
+5. Keep window open
+
+That's it! Your app is now publicly accessible.
+========================================================================
