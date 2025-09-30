@@ -1,140 +1,71 @@
 ========================================================================
-   HOW TO MANUALLY DEPLOY HEART DISEASE PREDICTOR - PUBLIC ACCESS
+         HOW TO MAKE HEART DISEASE PREDICTOR PUBLICLY ACCESSIBLE
 ========================================================================
 
-📋 MANUAL DEPLOYMENT GUIDE: Follow these exact steps to make your app publicly accessible
+📋 QUICK GUIDE: Follow these 2 simple steps to make your app available online
 
 ⚠️  IMPORTANT NOTES:
-- App runs on YOUR computer
-- Public link is TEMPORARY 
-- URL changes each time you deploy
-- App is only online when commands are running
-- You need TWO command windows open
+- The app runs on YOUR computer
+- The public link is TEMPORARY
+- URL changes each time you restart
+- App is only online when deployment is running
 
 ========================================================================
-STEP 1: PREREQUISITES (Check before starting)
+STEP 1: ONE-TIME SETUP (Run this once)
 ========================================================================
 
-✅ Required:
-1. Python installed on your computer
-2. ngrok.exe downloaded in project folder
-3. Project folder: C:\Users\IQRAA\OneDrive\Desktop\Heart_Disease_Project\
-
-📥 Download ngrok: https://ngrok.com/download
-💡 Save ngrok.exe to your project folder
+1. Download ngrok.exe from: https://ngrok.com/download
+2. Save ngrok.exe to your project folder
+3. Double-click 'setup_ngrok.bat'
+4. Wait for "SETUP COMPLETED" message
+5. Setup is done!
 
 ========================================================================
-STEP 2: MANUAL DEPLOYMENT PROCESS
+STEP 2: DEPLOYMENT (Run this when you want app online)
 ========================================================================
 
-Follow these steps in ORDER:
+1. Double-click 'free_deploy.bat'
+2. Wait 15-20 seconds for app to start
+3. Copy the URL that appears (looks like: https://abc123.ngrok-free.dev)
+4. Share this URL with users
+5. KEEP THE WINDOW OPEN to keep app accessible
 
-🪟 WINDOW 1 - Streamlit App:
+🚫 DO NOT:
+- Close the deployment window
+- Shut down your computer
+- Put computer to sleep
 
-1. Open Command Prompt
-2. Navigate to project folder:
-   cd C:\Users\IQRAA\OneDrive\Desktop\Heart_Disease_Project
-
-3. Install required packages (first time only):
-   pip install streamlit plotly pandas joblib scikit-learn
-
-4. Start the Streamlit app:
-   python -m streamlit run app.py --server.port 8501 --server.address 0.0.0.0
-
-5. Wait until you see:
-   ✅ Local URL: http://localhost:8501
-   ✅ Network URL: http://192.168.x.x:8501
-   
-6. LEAVE THIS WINDOW OPEN
-
-🪟 WINDOW 2 - Ngrok Tunnel:
-
-1. Open a NEW Command Prompt
-2. Navigate to project folder:
-   cd C:\Users\IQRAA\OneDrive\Desktop\Heart_Disease_Project
-
-3. Authenticate ngrok (first time only):
-   ngrok authtoken 33OgqqQNMz2Jf1dvUFD8fXJInBg_5id8XDTJDgsknVB6cgNby
-
-4. Start public tunnel:
-   ngrok http 8501
-
-5. Copy the public URL that appears:
-   ✅ Forwarding https://abc123-def.ngrok-free.dev -> http://localhost:8501
-
-6. LEAVE THIS WINDOW OPEN
-
-========================================================================
-STEP 3: VERIFICATION & USAGE
-========================================================================
-
-✅ To verify app is working:
-1. Open browser and go to: http://localhost:8501
-   - Should see your Heart Disease Predictor app
-   
-2. Open browser and go to your Ngrok URL:
-   - Should see the same app publicly accessible
-
-📤 Sharing your app:
-- Share the Ngrok URL: https://abc123-def.ngrok-free.dev
-- Anyone with this link can access your app
-- App remains online as long as BOTH command windows are open
-
-🛑 Stopping the app:
-- Close BOTH command windows
-- App becomes inaccessible to public
+✅ TO KEEP APP ONLINE:
+- Keep the 'free_deploy.bat' window open
+- Plug laptop into power
+- Use stable internet connection
+- Disable sleep mode in Windows Power settings
 
 ========================================================================
 TROUBLESHOOTING
 ========================================================================
 
-❌ Problem: "ngrok not recognized"
-✅ Solution: Make sure you're in the project folder with ngrok.exe
+❌ Problem: "ngrok not found"
+✅ Solution: Make sure ngrok.exe is in the same folder as setup_ngrok.bat
 
-❌ Problem: "Streamlit not recognized"  
-✅ Solution: Install streamlit: pip install streamlit
-
-❌ Problem: "Address already in use"
-✅ Solution: Use different port: change 8501 to 8502 in both commands
+❌ Problem: "Streamlit not found"
+✅ Solution: Run setup_ngrok.bat first to install dependencies
 
 ❌ Problem: Users see "Endpoint offline"
-✅ Solution: One or both command windows were closed
+✅ Solution: The deployment window was closed. Run free_deploy.bat again.
 
-❌ Problem: Can't access http://localhost:8501
-✅ Solution: Streamlit app didn't start properly - check Window 1 for errors
-
-========================================================================
-QUICK COMMAND REFERENCE
-========================================================================
-
-WINDOW 1 (Streamlit):
-cd C:\Users\IQRAA\OneDrive\Desktop\Heart_Disease_Project
-python -m streamlit run app.py --server.port 8501 --server.address 0.0.0.0
-
-WINDOW 2 (Ngrok):
-cd C:\Users\IQRAA\OneDrive\Desktop\Heart_Disease_Project  
-ngrok http 8501
+❌ Problem: URL changed
+✅ Solution: Normal for free tier. Share the new URL.
 
 ========================================================================
-IMPORTANT REMINDERS
+QUICK START:
 ========================================================================
 
-🚫 DO NOT:
-- Close either command window
-- Shut down your computer
-- Put computer to sleep
-- Disconnect from internet
-
-✅ TO KEEP APP ONLINE:
-- Keep BOTH command windows open
-- Plug laptop into power
-- Disable sleep mode
-- Use stable internet
-
-🎯 SUCCESS INDICATORS:
-- Window 1: Shows "Network URL: http://192.168.x.x:8501"
-- Window 2: Shows "Forwarding https://your-url.ngrok-free.dev"
-- Both URLs show your Heart Disease Predictor app
+1. Run setup_ngrok.bat (one-time)
+2. Run free_deploy.bat (when needed)
+3. Copy the URL
+4. Share with users
+5. Keep window open
 
 That's it! Your app is now publicly accessible.
 ========================================================================
