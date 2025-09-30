@@ -3,8 +3,8 @@ import joblib
 import pandas as pd
 import plotly.graph_objects as go
 
-pipeline = joblib.load("models/final_model.pkl")
-df = pd.read_csv("data/heart_disease.csv")
+pipeline = joblib.load("../models/final_model.pkl")
+df = pd.read_csv("../data/heart_disease.csv")
 
 st.set_page_config(page_title="Heart Disease Predictor", layout="centered")
 
