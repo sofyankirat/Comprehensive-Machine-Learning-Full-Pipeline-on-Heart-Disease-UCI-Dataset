@@ -29,6 +29,24 @@ A bonus **Streamlit UI** is included for real-time predictions, with deployment 
 
 ---
 
+# ❤️ Heart Disease Prediction App
+
+A machine learning web application that predicts the likelihood of heart disease based on patient health metrics.
+
+## 🔗 Live Demo
+
+**🌐 Public URL:** https://abc1-23de-456f.ngrok.io
+
+**📱 Access from anywhere:**
+- Open the link in any browser
+- Enter patient data  
+- Get instant heart disease risk prediction
+- See interactive risk gauge
+
+⚠️ **Note:** This is a demo link that may expire after some time.
+
+---
+
 ## 📂 File Structure
 Heart_Disease_Project/
 │── data/
