@@ -35,7 +35,7 @@ A machine learning web application that predicts the likelihood of heart disease
 
 ## 🔗 Live Demo
 
-**🌐 Public URL:** https://abc1-23de-456f.ngrok.io
+**🌐 Public URL:** [https://abc1-23de-456f.ngrok.io](https://mariko-uncalcareous-phototelegraphically.ngrok-free.dev)
 
 **📱 Access from anywhere:**
 - Open the link in any browser
