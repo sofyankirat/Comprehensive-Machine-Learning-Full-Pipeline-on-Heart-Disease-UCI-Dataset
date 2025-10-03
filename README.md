@@ -49,6 +49,7 @@ A machine learning web application that predicts the likelihood of heart disease
 
 ## 📂 File Structure
 Heart_Disease_Project/
+
 │── data/
 
 │ ├── heart_disease.csv
